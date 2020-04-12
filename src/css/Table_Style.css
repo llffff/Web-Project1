@@ -57,10 +57,6 @@
   
 }
 /* 设置table公共属性*/
-
-
-
-
 ._table li[onclick] {
   color: rgba(255, 255, 255, 0.815);
   border-top: rgb(245, 245, 245, 0.2) solid 1px;
