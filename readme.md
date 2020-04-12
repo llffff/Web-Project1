@@ -64,7 +64,7 @@ Bonus完成情况：已完成5.1，5.2，5.3
 
 
     [laptop-sample3] 注册、登录 ↓
-> <img alt="laptop-注册&登录" src="./prt_sc/readme/laptop sample3.png">
+> <a href="https://imgchr.com/i/GODx1K"><img src="https://s1.ax1x.com/2020/04/12/GODx1K.md.png" alt="GODx1K.png" border="0" /></a>
 
 -------------------
 
