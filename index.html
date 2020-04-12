@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pics Store | Sign in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/Nav_Style.css">
+    <link rel="stylesheet" href="src/css/Signin_Style.css">
+    <meta charset="UTF-8">
+</head>
+
+<script>
+    function showDiv() {
+        var login_menu = document.getElementById("login_menu");
+        login_menu.style.display = "block";
+    }
+
+    function hideDiv() {
+        var login_menu = document.getElementById("login_menu");
+        login_menu.style.display = "none";
+    }
+
+    function display_alert() { alert("Refresh the images.") }
+</script>
+
+<body>
+    <nav class="top_nav" id="pageup" hidden>
+        <div class="nav_bar">
+            <div class="nav_menu">
+                <ul class="nav_ul">
+                    <li><span class="website_title" title="Pics Store">Pics Store</span></li>
+                    <li><a href="./src/home.html">HOME</a></li>
+                    <li><a href="./src/browse.html">BROWSE</a></li>
+                    <li><a href="./src/search.html">SERACH</a></li>
+                </ul>
+            </div>
+
+            <div class="nav_personal">
+                <ul class="nav_ul">
+                    <li id="my_account" id="this_page" onmouseover="showDiv()" onmouseout="hideDiv()"><a>Account <span
+                                class="shape">▼</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--个人中心弹窗-->
+        <div id="login_menu">
+            <ul class="list_ul" onmouseover="showDiv()" onmouseout="hideDiv()">
+                <li><img src="src/img/upload.png"><a href="./src/upload.html">上传</a></li>
+                <li><img src="src/img/mypics.png"><a href="./src/mypics.html">我的图片</a></li>
+                <li><img src="src/img/mycollect.png"><a href="./src/myfavorite.html"">我的收藏</a></li>
+                <li><img src="src/img/login.png"><a href="./index.html"">登入</a></li>    
+    
+            </ul>
+            </div>
+    </nav>
+
+    <div class="bg">
+        Pics Store
+    </div>
+
+        <!--右下固定悬浮按钮-->
+        <div class=" float_button" hidden>
+                            <ul>
+                                <li title="alert"><img src="src/img/alert.png"></li>
+                                <li title="page up"><a href="#pageup"><img src="src/img/pageup.png"></a></li>
+                            </ul>
+        </div>
+
+
+        <section class="login_block">
+            <span class="website_title" title="Pics Store">Pics Store</span><br>
+            <hr>
+            <div class="form_block">
+                <form name="formregister" method="POST" action="#">
+                    <label hidden for="username">用户名</label><br>
+                    <input type="text" name="username" required pattern="[A-Z, a-z, 0-9, _]*" size="40"
+                        placeholder="Username"><br>
+
+                    <label hidden for="password1">密码</label><br>
+                    <input type="password" name="password1" required pattern="[A-Z, a-z, 0-9]{8,}" size="40"
+                        placeholder="Password"><br>
+                    <div class="bt2">
+                        <a href="./src/home.html" class="bt2">I just have a look</a>
+                        <a href="./src/register.html" class="bt2">Register</a>
+                    </div>
+                    <label for="submit"> </label><br>
+                    <a href="./src/home.html"><input type="button" value="Sign in"></a><br>
+
+
+                </form>
+            </div>
+
+
+        </section>
+
+
+        <footer class="common_footer">Copyright © 2020 lff, Inc.</footer>
+</body>
+
+</html>

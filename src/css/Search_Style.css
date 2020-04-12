@@ -1,0 +1,144 @@
+@media screen and (min-width: 900px) /*laptop */ {
+  .container {
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  ._search {
+    margin: 10px 20px;
+  }
+  ._table {
+    margin: 30px;
+    overflow: hidden;
+  }
+
+  article .image_show {
+    width: 200px;
+    height: 200px;
+    margin: 20px 15px 20px 20px;
+}
+  .image_info {
+    width: 660px;
+    -webkit-line-clamp: 5;
+    margin: 20px 20px 20px 10px;
+}
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .container {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  ._search {
+    margin: 10px 20px;
+  }
+  ._table {
+    margin: 30px;
+    overflow: hidden;
+  }
+
+  article .image_show {
+    width: 20vw;
+    height: 20vw;
+    min-width: 120px;
+    min-height: 120px;
+    margin: 10px;
+}
+
+  .image_info {
+    width: 60vw;
+    -webkit-line-clamp: 3;
+    margin: 10px;
+  }
+
+  input[type="text"].normal,
+  textarea.normal {
+    width: 96%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  ._search {
+    margin: 10px 20px;
+  }
+  ._table {
+    margin: 15px;
+    overflow: hidden;
+  }
+
+  article .image_show {
+    width: 20vw;
+    height: 20vw;
+    min-width: 110px;
+    min-height: 110px;
+    margin: 10px ;
+  }
+
+  .image_info {
+    width: 50%;
+    -webkit-line-clamp: 4;
+    font-size: 12px;
+    vertical-align: baseline;
+    /*margin: 20px 20px 20px 10px;*/
+  }
+
+  input[type="text"].normal,
+  textarea.normal {
+    width: 96%;
+  }
+}
+
+/*不变*/
+input[type="button"] {
+  margin: 10px 0;
+}
+article .image_show {
+  float: left;
+  background-image: url(../img/head/1584362137451.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /*不改变比例，尽量涵盖四边*/
+  border-radius: 10px;
+  overflow: hidden;
+}
+.image_info {
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+/* 下方 result table*/
+._result article {
+  display: block;
+  overflow: hidden;
+  border-bottom: rgba(236, 236, 236, 0.2) solid 1px;
+}
+
+article .image_show:hover {
+  box-shadow: 0 0.5px 10px rgb(172, 172, 172);
+}
+._result article a {
+  float: left;
+  overflow: hidden;
+}
+
+.image_info h2 {
+  margin: 10px 0;
+  display: block;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.image_info p:hover,
+.image_info h2:hover {
+  color: rgb(0, 102, 170);
+  cursor: pointer;
+}

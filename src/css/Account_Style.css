@@ -1,0 +1,186 @@
+@media screen and (min-width: 900px) /*PC laptop*/ {
+  ._table {
+    margin: 30px;
+  }
+  ._upload,
+  ._photo {
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  /*upload*/
+  .upload_file {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #image_div {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  /*My photo*/
+  article .image_show {
+    width: 140px;
+    height: 140px;
+    margin: 30px;
+  }
+
+  .image_info {
+    width: 660px;
+    float: left;
+    margin: 20px 20px 20px 10px;
+  }
+  .image_info p {
+    -webkit-line-clamp: 3;
+  }
+  .image_info h2 {
+    width: 660px;
+    margin: 10px 0;
+    font-size: larger;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 600px) /*Pad phone*/ {
+  ._upload,
+  ._photo {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  ._table {
+    margin: 10px;
+  }
+  /*upload*/
+  .upload_file {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #image_div {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  /*My photo*/
+  article .image_show {
+    width: 140px;
+    height: 140px;
+    margin: 15px;
+  }
+
+  .image_info {
+    width: 65%;
+    float: left;
+    margin: 20px 20px 20px 10px;
+  }
+  .image_info p {
+    -webkit-line-clamp: 3;
+  }
+  .image_info h2 {
+    margin: 10px 0;
+    font-size: larger;
+  }
+}
+@media screen and (max-width: 600px) /*Pad phone*/ {
+  ._upload,
+  ._photo {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  ._table {
+    margin: 15px;
+  }
+  /*upload*/
+  .upload_file {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #image_div {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  /*My photo*/
+  article .image_show {
+    width: 110px;
+    height: 110px;
+    margin: 10px;
+  }
+
+  .image_info {
+    width: 50%;
+    float: left;
+    margin: 10px 10px 10px 0;
+  }
+  .image_info p {
+    -webkit-line-clamp: 2;
+    font-size: 12px;
+  }
+
+  .image_button1 {
+    display: none;
+  }
+
+  .image_button2 {
+    margin-top: -10px;
+    margin-left: 10px;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .image_info h2 {
+    margin: 5px 0;
+  }
+}
+
+/*不变*/
+._table article {
+  display: block;
+  overflow: hidden;
+  border-bottom: rgba(236, 236, 236, 0.2) solid 1px;
+}
+
+article .image_show {
+  float: left;
+  background-image: url(../img/head/1584362137451.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /*不改变比例，尽量涵盖四边*/
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+article .image_show:hover {
+  box-shadow: 0 0.5px 10px rgb(172, 172, 172);
+}
+
+.image_info p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.image_info h2 {
+  display: block;
+  font-weight: bolder;
+}
+
+.image_info p:hover,
+.image_info h2:hover {
+  color: rgb(0, 102, 170);
+  cursor: pointer;
+}
+
+/*form-container*/
+.form-container {
+  display: flexbox;
+  margin: 20px;
+  overflow: hidden;
+}

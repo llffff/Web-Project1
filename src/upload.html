@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pics Store | Upload</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Nav_Style.css">
+    <link rel="stylesheet" href="css/_table_Style.css">
+    <link rel="stylesheet" href="css/Account_Style.css">
+    <meta charset="UTF-8">
+</head>
+
+<!--实现个人中心的鼠标进入-弹出和xxx鼠标退出-消失-->
+<script>
+    function showDiv() {
+        var login_menu = document.getElementById("login_menu");
+        login_menu.style.display = "block";
+    }
+
+    function hideDiv() {
+        var login_menu = document.getElementById("login_menu");
+        login_menu.style.display = "none";
+    }
+
+    function display_alert() { alert("Refresh the images.") }
+</script>
+
+<body>
+    <!--顶部导航栏-->
+    <nav class="top_nav" id="pageup">
+        <!--默认显示的导航栏条目-->
+        <div class="nav_bar">
+            <!--左侧菜单栏-->
+            <div class="nav_menu">
+                <ul class="nav_ul">
+                    <li><span class="website_title" title="Pics Store">Pics Store</span></li>
+                    <li><a href="./home.html">HOME</a></li>
+                    <li><a href="./browse.html">BROWSE</a></li>
+                    <li><a href="./search.html">SERACH</a></li>
+                </ul>
+            </div>
+            <!--右侧个人中心-->
+            <div class="nav_personal">
+                <ul class="nav_ul">
+                    <li id="my_account" onmouseover="showDiv()" onmouseout="hideDiv()"><a>Account <span
+                                class="shape">▼</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--个人中心弹窗-->
+        <div id="login_menu">
+            <ul class="list_ul" onmouseover="showDiv()" onmouseout="hideDiv()">
+                <li><img src="img/upload.png"><a href="./upload.html">上传</a></li>
+                <li><img src="img/mypics.png"><a href="./mypics.html">我的图片</a></li>
+                <li><img src="img/mycollect.png"><a href="./myfavorite.html"">我的收藏</a></li>
+                <li><img src="img/login.png"><a href="../index.html"">登入</a></li>
+             </ul>
+            </div>
+        </nav>
+
+   <!--右下固定悬浮按钮-->
+    <div class=" float_button">
+                            <ul>
+                                <li title="alert" onclick="alert('Something happened.');"><img src="img/alert.png">
+                                </li>
+                                <li title="page up"><a href="#pageup"><img src="img/pageup.png"></a></li>
+                            </ul>
+        </div>
+
+        <!--搜索结果显示table-->
+        <div class="_upload">
+            <section class="_table">
+                <header>Upload</header>
+                <!--以article为基本单元-->
+                <div class="form-container">
+                    <form class="upload-form">
+
+                        <div class="upload_file">
+                            <input type="file" hidden id="upload_file" name="pic1" accept="image/*"><br>
+                            <div id="image_div">图片未上传</div>
+                            <input type="button" class="normal" id="upload_button" onclick="input.click();"
+                                value="上传图片">
+
+                        </div>
+
+                        <label for="title_value">Image title</label><br>
+                        <input type="text" class="normal" name="title_value"><br>
+
+                        <label for="textarea">Image description</label><br>
+                        <textarea name="textarea" class="normal" rows="5"></textarea><br>
+
+                        <label for="country">Country</label><br>
+                        <input type="text" class="normal" name="country"><br>
+
+                        <label for="city">City</label><br>
+                        <input type="text" class="normal" name="city"><br>
+
+                        <a href="./image_details.html">
+                            <input type="button" onclick="alert('Submit successfully!');" class="normal" name="submit"
+                                value="Submit">
+                        </a>
+                    </form>
+                </div>
+
+                <script>
+                    var input = document.getElementById('upload_file');
+                    var image_div = document.getElementById('image_div');
+                    if (typeof FileReader === 'undefined') {
+                        image_div.innerHTML = "抱歉，你的浏览器不支持 FileReader";
+                        input.setAttribute('disabled', 'disabled');
+                    }
+
+                    input.onchange = function () {
+                        var reader = new FileReader();
+                        reader.readAsDataURL(input.files[0]);
+                        reader.onload = function () {
+                            image_div.innerHTML = '<img src="' + reader.result + '" class="image-show">';
+                        }
+
+                    }
+
+                </script>
+
+
+            </section>
+        </div>
+
+
+        <!--普通页脚-->
+        <footer class="common_footer">Copyright © 2020 lff, Inc.</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pics Store | Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Nav_Style.css">
+    <link rel="stylesheet" href="css/_table_Style.css">
+    <link rel="stylesheet" href="css/Browse_Style.css">
+
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!--实现个人中心的鼠标进入-弹出和鼠标退出-消失-->
+    <script>
+        function showDiv() {
+            var login_menu = document.getElementById("login_menu");
+            login_menu.style.display = "block";
+        }
+
+        function hideDiv() {
+            var login_menu = document.getElementById("login_menu");
+            login_menu.style.display = "none";
+        }
+
+        function display_alert() { alert("Refresh the images.") }
+
+    </script>
+
+    <nav class="top_nav" id="pageup">
+
+        <div class="nav_bar">
+            <div class="nav_menu">
+                <ul class="nav_ul">
+                    <li><span class="website_title" title="Pics Store">Pics Store</span></li>
+                    <li><a href="./home.html">HOME</a></li>
+                    <li><a href="./browse.html">BROWSE</a></li>
+                    <li><a href="./search.html">SERACH</a></li>
+                </ul>
+            </div>
+
+            <div class="nav_personal">
+                <ul class="nav_ul">
+                    <li id="my_account" onmouseover="showDiv()" onmouseout="hideDiv()"><a>Account <span
+                                class="shape">▼</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--个人中心弹窗-->
+        <div id="login_menu">
+            <ul class="list_ul" onmouseover="showDiv()" onmouseout="hideDiv()">
+                <li><img src="img/upload.png"><a href="./upload.html">上传</a></li>
+                <li><img src="img/mypics.png"><a href="./mypics.html">我的图片</a></li>
+                <li><img src="img/mycollect.png"><a href="./myfavorite.html"">我的收藏</a></li>
+                    <li><img src="img/login.png"><a href="../index.html"">登入</a></li>    
+    
+                </ul>
+               </div>
+        </nav>
+
+        <!--右下固定悬浮按钮-->
+        <div class=" float_button">
+                            <ul>
+                                <li title="alert"><img src="img/alert.png"></li>
+                                <li title="page up"><a href="#pageup"><img src="img/pageup.png"></a></li>
+                            </ul>
+        </div>
+
+        <!--主要内容-->
+        <div class="_table main_table">
+            <header>Details</header>
+
+            <!--标题框-->
+            <div class="top_title">
+                <span class="image_title">Good image</span>
+                <span class="creator">by llffff</span>
+            </div>
+
+            <!--中间部分 图片+信息-->
+            <div class="center_div">
+                <!--左边图片-->
+                <div class="left_show_images">
+                    <img src="img/head/1.jpeg">
+                </div>
+                <!--右边信息 从上到下 包含3部分-->
+                <div class="right_details">
+                    <div class="_table details">
+                        <header>Like Number</header>
+                        <span class="like_number">100</span>
+                    </div>
+
+                    <div class="_table details">
+                        <header>Image Details</header>
+                        <ul>
+                            <li onclick="">Country: Future</li>
+                            <li onclick="">City: Unknown</li>
+                            <li onclick="">Content: Mar</li>
+                        </ul>
+                    </div>
+
+                    <div class="details">
+                        <input onclick="alert('Something happened.');" type="button" id="like" value="Like ❤">
+                    </div>
+                </div>
+            </div>
+
+            <!--图片说明-->
+            <div class="image_details_description">
+                <p>Your brain has two parts: one is left, and the other is right.
+                    Your left brain has nothing right. Your right brain has nothing left.
+                    Your brain has two parts: one is left, and the other is right.
+                    Your left brain has nothing right. Your right brain has nothing left.
+                    Your brain has two parts: one is left, and the other is right.
+                    Your left brain has nothing right. Your right brain has nothing left.
+                    Your brain has two parts: one is left, and the other is right.
+                    Your left brain has nothing right. Your right brain has nothing left.
+                </p>
+            </div>
+
+        </div>
+
+
+
+        <footer class="common_footer">Copyright © 2020 lff, Inc.</footer>
+
+</body>

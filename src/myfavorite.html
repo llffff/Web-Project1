@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pics Store | My Favourite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Nav_Style.css">
+    <link rel="stylesheet" href="css/_table_Style.css">
+    <link rel="stylesheet" href="css/Account_Style.css">
+    <meta charset="UTF-8">
+</head>
+
+<!--实现个人中心的鼠标进入-弹出和xxx鼠标退出-消失-->
+<script>
+    function showDiv() {
+        var login_menu = document.getElementById("login_menu");
+        login_menu.style.display = "block";
+    }
+
+    function hideDiv() {
+        var login_menu = document.getElementById("login_menu");
+        login_menu.style.display = "none";
+    }
+
+    function display_alert() { alert("Refresh the images.") }
+</script>
+
+<body>
+    <!--顶部导航栏-->
+    <nav class="top_nav" id="pageup">
+        <!--默认显示的导航栏条目-->
+        <div class="nav_bar">
+            <!--左侧菜单栏-->
+            <div class="nav_menu">
+                <ul class="nav_ul">
+                    <li><span class="website_title" title="Pics Store">Pics Store</span></li>
+                    <li><a href="./home.html">HOME</a></li>
+                    <li><a href="./browse.html">BROWSE</a></li>
+                    <li><a href="./search.html">SERACH</a></li>
+                </ul>
+            </div>
+            <!--右侧个人中心-->
+            <div class="nav_personal">
+                <ul class="nav_ul">
+                    <li id="my_account" onmouseover="showDiv()" onmouseout="hideDiv()"><a>Account <span
+                                class="shape">▼</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--个人中心弹窗-->
+        <div id="login_menu">
+            <ul class="list_ul" onmouseover="showDiv()" onmouseout="hideDiv()">
+                <li><img src="img/upload.png"><a href="./upload.html">上传</a></li>
+                <li><img src="img/mypics.png"><a href="./mypics.html">我的图片</a></li>
+                <li><img src="img/mycollect.png"><a href="./myfavorite.html"">我的收藏</a></li>
+                 <li><img src="img/login.png"><a href="../index.html"">登入</a></li>
+             </ul>
+            </div>
+        </nav>
+
+        <!--右下固定悬浮按钮-->
+        <div class=" float_button">
+                            <ul>
+                                <li title="alert"><img src="img/alert.png"></li>
+                                <li title="page up"><a href="#pageup"><img src="img/pageup.png"></a></li>
+                            </ul>
+        </div>
+
+        <!--photo显示框-->
+        <div class="_photo">
+            <section class="_table">
+                <header>My favourite</header>
+                <!--以article为基本单元-->
+                <div>
+                    <article>
+                        <!--图片展示区-->
+                        <a href="./image_details.html">
+                            <div class="image_show"></div>
+                        </a>
+
+                        <!--内容区-->
+                        <div class="image_info">
+                            <h2>Title</h2>
+                            <p class="image_description">Your brain has two parts: one is left, and the other is right.
+                                Your left brain has nothing right. Your right brain has nothing left.
+                                Your brain has two parts: one is left, and the other is right.
+                                Your left brain has nothing right. Your right brain has nothing left.
+                                Your brain has two parts: one is left, and the other is right.
+                                Your left brain has nothing right. Your right brain has nothing left.
+                                Your brain has two parts: one is left, and the other is right.
+                                Your left brain has nothing right. Your right brain has nothing left.</p>
+                            <input type="button" class="red" onclick="alert('Something happened.');" value="Delete">
+                        </div>
+                    </article>
+                    <article>
+                        <!--图片展示区-->
+                        <a href="./image_details.html">
+                            <div class="image_show"></div>
+                        </a>
+
+                        <!--内容区-->
+                        <div class="image_info">
+                            <h2>Title</h2>
+                            <p class="image_description">Your brain has two parts: one is left, and the other is right.
+                                Your left brain has nothing right. Your right brain has nothing left.
+                                Your brain has two parts: one is left, and the other is right.
+                                Your left brain has nothing right. Your right brain has nothing left.
+                                Your brain has two parts: one is left, and the other is right.
+                                Your left brain has nothing right. Your right brain has nothing left.
+                                Your brain has two parts: one is left, and the other is right.
+                                Your left brain has nothing right. Your right brain has nothing left.</p>
+                            <input type="button" class="red" onclick="alert('Something happened.');" value="Delete">
+                        </div>
+                    </article>
+                    <article>
+                        <!--图片展示区-->
+                        <a href="./image_details.html">
+                            <div class="image_show"></div>
+                        </a>
+
+                        <!--内容区-->
+                        <div class="image_info">
+                            <h2>Title</h2>
+                            <p class="image_description">Your brain has two parts: one is left, and the other is right.
+                                Your left brain has nothing right. Your right brain has nothing left.
+                                Your brain has two parts: one is left, and the other is right.
+                                Your left brain has nothing right. Your right brain has nothing left.
+                                Your brain has two parts: one is left, and the other is right.
+                                Your left brain has nothing right. Your right brain has nothing left.
+                                Your brain has two parts: one is left, and the other is right.
+                                Your left brain has nothing right. Your right brain has nothing left.</p>
+                            <input type="button" class="red" onclick="alert('Something happened.');" value="Delete">
+                        </div>
+                    </article>
+                </div>
+
+
+                <!--通用页码-->
+                <footer class="page_number">
+                    <a href="">首页</a><a href="">1 2 3 4 5 ...</a><a href="">尾页</a>
+                </footer>
+            </section>
+        </div>
+
+
+
+        <!--普通页脚-->
+        <footer class="common_footer">Copyright © 2020 lff, Inc.</footer>
+
+</body>
+
+</html>

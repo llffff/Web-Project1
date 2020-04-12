@@ -1,0 +1,202 @@
+@media screen and (min-width: 900px) /*PC laptop*/ {
+  /* the whole section: shadow ,60%, bgcolor*/
+  section.container {
+    margin: 0px auto;
+    box-shadow: 0 5px 5px rgb(107, 107, 107);
+    overflow: hidden;
+    background-color: rgba(24, 22, 27, 0.2);
+  }
+
+  /* head picture border radius*/
+  .header_pic {
+    margin: 20px;
+    border-radius: 25px;
+  }
+
+  /*两端对齐*/
+  .pics_window {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  /*文字2行溢出*/
+  .image_info {
+    margin: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  h2 {
+    font-size: 21px;
+    padding: 10px 0;
+  }
+
+  /* each article: bgcolor radius; odd-right even-left; hover-shadow */
+  article {
+    background-color: rgba(0, 0, 8, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 23vw;
+    margin: 2vw 1vw;
+    padding: 20px;
+    color: white;
+    display: inline-block;
+    align-items: center;
+  }
+
+  article:hover {
+    box-shadow: 0 0.5px 10px rgb(17, 67, 87);
+  }
+
+  .image_show {
+    width: 23vw;
+    height: 23vw;
+    background-image: url(../img/head/1584362137451.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /*不改变比例，尽量涵盖四边*/
+    border-radius: 20px;
+  }
+
+  .image_show:hover {
+    box-shadow: 0 0.5px 10px rgb(172, 172, 172);
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) /*Pad phone*/ {
+  /* the whole section: shadow ,60%, bgcolor*/
+  section.container {
+    margin: 0px auto;
+    padding: 0 15px;
+    box-shadow: 0 5px 5px rgb(107, 107, 107);
+    overflow: hidden;
+    background-color: rgba(24, 22, 27, 0.2);
+  }
+
+  /* head picture border radius*/
+  .header_pic {
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+
+  /*article 内部左右布局*/
+  article {
+    overflow: hidden;
+    padding: 10px;
+    border-bottom: rgb(245, 245, 245, 0.2) solid 1px;
+    color: white;
+    display: inline-block;
+    align-items: center;
+  }
+
+  article .image_show {
+    width: 30vw;
+    height: 30vw;
+    max-width: 150px;
+    max-height: 150px;
+
+    background-image: url(../img/head/1584362137451.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /*不改变比例，尽量涵盖四边*/
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  article .right_div {
+    width: 65%;
+    display: inline-block;
+  }
+  article p {
+    word-wrap: break-word;
+  
+  }
+   /*文字2行溢出*/
+  span.image_info {
+    margin: 0 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+
+  article .right_div h2 {
+    font-size: 21px;
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 600px) /*Pad phone*/ {
+  /* the whole section: shadow ,60%, bgcolor*/
+  section.container {
+    margin: 0px auto;
+    padding: 0 15px;
+    box-shadow: 0 5px 5px rgb(107, 107, 107);
+    overflow: hidden;
+    background-color: rgba(24, 22, 27, 0.2);
+  }
+
+  /* head picture border radius*/
+  .header_pic {
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+
+  /*article 内部左右布局*/
+  article {
+    overflow: hidden;
+    padding: 10px;
+    border-bottom: rgb(245, 245, 245, 0.2) solid 1px;
+    color: white;
+    display: inline-block;
+    align-items: center;
+  }
+
+  article .image_show {
+    width: 30vw;
+    height: 30vw;
+    max-width: 150px;
+    max-height: 150px;
+
+    background-image: url(../img/head/1584362137451.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /*不改变比例，尽量涵盖四边*/
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  article .right_div {
+    width: 47vw;
+ 
+    display: inline-block;
+  }
+  article p {
+    word-wrap: break-word;
+  
+  }
+   /*文字2行溢出*/
+  span.image_info {
+    margin: 0 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    font-size: 12px;
+  }
+
+  article .right_div h2 {
+    padding: 10px 0;
+  }
+}
