@@ -39,7 +39,8 @@ Bonus完成情况：已完成5.1，5.2，5.3
 
 
 -------------------
-### 页面截图
+### 页面截图(截图在文件夹prt_sc中)
+
 1. laptop
 **Home、Browser、Search**
 ![laptop-sample1](./prt_sc/laptop-sample1-1.png)
@@ -77,18 +78,18 @@ Bonus完成情况：已完成5.1，5.2，5.3
 -------------------
 3. 手机竖屏
 **Home、Browser、Search**
-![phone-sample1](./prt_sc/phone-sample1-1.png)
-![phone-sample1](./prt_sc/phone-sample1-2.png)
-![phone-sample1](./prt_sc/phone-sample1-3.png)
-![phone-sample1](./prt_sc/phone-sample1-4.png)
+![phone-sample1](./prt_sc/phone-sample1-1.jpg)
+![phone-sample1](./prt_sc/phone-sample1-2.jpg)
+![phone-sample1](./prt_sc/phone-sample1-3.jpg)
+![phone-sample1](./prt_sc/phone-sample1-4.jpg)
 
 ==========
 
 **个人中心、注册**
-![phone-sample2](./prt_sc/phone-sample2-1.png)
-![phone-sample2](./prt_sc/phone-sample2-2.png)
-![phone-sample2](./prt_sc/phone-sample2-3.png)
-![phone-sample2](./prt_sc/phone-sample1-0.png)
+![phone-sample2](./prt_sc/phone-sample2-1.jpg)
+![phone-sample2](./prt_sc/phone-sample2-2.jpg)
+![phone-sample2](./prt_sc/phone-sample2-3.jpg)
+![phone-sample2](./prt_sc/phone-sample1-0.jpg)
 
 -------------------
 ## 对本课程的建议
