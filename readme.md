@@ -65,8 +65,8 @@ Bonus完成情况：已完成5.1，5.2，5.3
 > <img src="./laptop sample2-2.png">
 
 
-    [laptop-sample2] 注册、登录 ↓
-> <img src="https://imgchr.com/i/GODx1K">
+    [laptop-sample3] 注册、登录 ↓
+> ![laptop-sample3](https://imgchr.com/i/GODx1K)
 
 -------------------
 
