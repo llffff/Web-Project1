@@ -94,20 +94,13 @@
 /*不变*/
 .bg {
   display: none ;
-  width: 2000px;
-  text-align: center;
-  position: fixed;
-  top: 100px;
-  left: -200px;
-  padding: 0;
-  text-align: center;
-  font-family: "Edwardian Script ITC";
-  font-size: 400pt;
-  font-weight: bolder;
-  color: transparent;
-  text-shadow: 0 0 20px #0000006b;
+  
 }
 nav {
+  display: none;
+}
+
+.float_button{
   display: none;
 }
 .login_block {

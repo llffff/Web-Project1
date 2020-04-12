@@ -1,7 +1,13 @@
 * {
-  font-family: 'Microsoft YaHei';
+  font-family: "Microsoft YaHei";
   transition: all 150ms ease, 200ms ease-in-out;
 }
+
+@font-face {
+  font-family: website;
+  src: url("ITCEDSCR.TTF");
+}
+
 body {
   background: linear-gradient(to right, rgb(17, 67, 87), rgb(242, 148, 146));
   overflow: hidden;
@@ -42,24 +48,25 @@ li a#this_page {
   text-decoration: none;
 }
 /*nav 响应式布局*/
-@media screen and (min-width: 900px)/*laptop */ {
+@media screen and (min-width: 900px) /*laptop */ {
   .nav_bar a {
     width: 150px;
     font-size: 14pt;
     font-weight: bold;
     font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
   }
+
   /* website name list element*/
   .website_title {
     width: 170px;
     display: inline-block;
     padding: 0;
     text-align: center;
-    font-family: "Edwardian Script ITC";
+    font-family: website;
     font-size: 22pt;
     font-weight: bolder;
     color: #ffffff;
-  } 
+  }
   /* right of nav bar : class="nav_personal" */
   #my_account a {
     float: right;
@@ -76,46 +83,45 @@ li a#this_page {
   }
 }
 
-@media screen and (max-width: 900px) and (min-width: 600px){
-    .nav_bar a {
-        width: 110px;
-        font-size: 14pt;
-        font-weight: bold;
-        font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
-      }
-      /* website name list element*/
-      .website_title {
-        width: 140px;
-        display: inline-block;
-        padding: 0;
-        text-align: center;
-        font-family: "Edwardian Script ITC";
-        font-size: 22pt;
-        font-weight: bolder;
-        color: #ffffff;
-      } 
-      /* right of nav bar : class="nav_personal" */
-      #my_account a {
-        float: right;
-        color: rgb(0, 0, 0);
-        text-shadow: 1px 2px 5px rgba(255, 255, 255, 0.5);
-      }
-    
-      #my_account a:hover {
-        background-color: rgb(255, 255, 255);
-      }
-    
-      #my_account .shape {
-        font-size: 9pt;
-      }
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .nav_bar a {
+    width: 110px;
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
+  }
+  /* website name list element*/
+  .website_title {
+    width: 140px;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    font-family: website;
+    font-size: 22pt;
+    font-weight: bolder;
+    color: #ffffff;
+  }
+  /* right of nav bar : class="nav_personal" */
+  #my_account a {
+    float: right;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 2px 5px rgba(255, 255, 255, 0.5);
+  }
+
+  #my_account a:hover {
+    background-color: rgb(255, 255, 255);
+  }
+
+  #my_account .shape {
+    font-size: 9pt;
+  }
 }
-@media screen and (max-width: 600px) /*phone*/{
+@media screen and (max-width: 600px) /*phone*/ {
   .nav_bar a {
     width: 32vw;
     margin-left: 5px;
     font-size: 14px;
     font-weight: bolder;
-  
   }
 
   /* website name list element*/
@@ -124,18 +130,17 @@ li a#this_page {
     height: 60px;
     margin-top: 8px;
     text-align: center;
-    font-family: "Edwardian Script ITC";
+    font-family: website;
     font-size: 16px;
     font-weight: bolder;
     color: #ffffff;
     display: inline-block;
-  } 
-  
+  }
+
   /* right of nav bar : class="nav_personal" */
   #my_account a {
     float: left;
     color: #ffffff;
-    
   }
 
   #my_account .shape {

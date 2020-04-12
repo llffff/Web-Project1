@@ -1,6 +1,7 @@
 @media screen and (min-width: 900px) /*PC laptop*/ {
   /* the whole section: shadow ,60%, bgcolor*/
   section.container {
+    width: 1000px;
     margin: 0px auto;
     box-shadow: 0 5px 5px rgb(107, 107, 107);
     overflow: hidden;
@@ -15,8 +16,8 @@
 
   /*两端对齐*/
   .pics_window {
-    width: 90vw;
-    margin: 0 auto;
+    width: fit-content;
+    margin: 0 20px;
   }
 
   /*文字2行溢出*/
@@ -40,7 +41,8 @@
     border-radius: 20px;
     overflow: hidden;
     width: 23vw;
-    margin: 2vw 1vw;
+    max-width: 250px;
+    margin: 20px 10px;
     padding: 20px;
     color: white;
     display: inline-block;
@@ -53,7 +55,11 @@
 
   .image_show {
     width: 23vw;
+    max-width: 250px;
+
     height: 23vw;
+    max-height: 250px;
+
     background-image: url(../img/head/1584362137451.jpeg);
     background-position: center;
     background-repeat: no-repeat;
