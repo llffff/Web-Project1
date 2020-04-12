@@ -43,7 +43,7 @@ Bonus完成情况：已完成5.1，5.2，5.3
 
 1. laptop
 **Home、Browser、Search**
-![laptop-sample1](./prt_sc/laptop-sample1-1.png)
+![laptop-sample1](./prt_sc/laptop-sample1-1.png){:width="50%"}
 ![laptop-sample1](./prt_sc/laptop-sample1-2.png)
 ![laptop-sample1](./prt_sc/laptop-sample1-3.png)
 ![laptop-sample1](./prt_sc/laptop-sample1-4.png)
