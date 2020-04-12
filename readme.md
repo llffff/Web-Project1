@@ -32,8 +32,6 @@ Bonus完成情况：已完成5.1，5.2，5.3
 设置其background-image为图片，设置norepeat和cover；
 可通过设置div的height和width调整显示为正方形。
 
--------------------
-
 #### B5.2 响应式布局
 
 1. 在html文档中，添加
@@ -56,36 +54,36 @@ Bonus完成情况：已完成5.1，5.2，5.3
 #### 1.**laptop**
 
     [laptop-sample1] 主页、浏览、搜索 ↓
-> <img src="./laptop sample1-1.png">
+> ![laptop-主页&浏览&搜索](./prt_sc/readme/laptop sample1-1.png)
 
 
-    [laptop-sample2] 个人中心 ↓
-> <img src="./laptop sample2-1.png">
+    [laptop-sample2] 上传、我的图片、我的收藏 ↓
+> ![laptop-上传&我的图片&我的收藏](./prt_sc/readme/laptop sample2-1.png)
 
-> <img src="./laptop sample2-2.png">
+> ![laptop-上传&我的图片&我的收藏](./prt_sc/readme/laptop sample2-2.png)
 
 
     [laptop-sample3] 注册、登录 ↓
-> ![laptop-sample3](https://imgchr.com/i/GODx1K)
+> ![laptop-注册&登录](./prt_sc/readme/laptop sample3.png)
 
 -------------------
 
  #### 2.**pad/手机横屏**
 
     [pad-sample1] 主页、浏览、搜索 ↓
-> <img src="./pad sample1.png">
+> ![pad-主页&浏览&搜索](./prt_sc/readme/pad sample1.png)
 
 
     [pad-sample2] 个人中心 ↓
-> <img src="./pad sample2.png">
+> ![pad-上传&我的图片&我的收藏](./prt_sc/readme/pad sample2.png)
 
 -------------------
 
 #### 3.**手机竖屏**
 
     [phone-sample1] 主页、浏览、搜索 ↓
-> <img src="./phone sample.png">
+> ![phone-主页&浏览&搜索](./prt_sc/readme/phone sample1.png)
 
 
     [phone-sample2] 个人中心、注册 ↓
-> <img src="./phone sample2.png">
+> ![phone-注册&上传&我的图片&我的收藏](./prt_sc/readme/phone sample2.png)
