@@ -1,10 +1,17 @@
 PJ1 说明文档
 ==========
 姓名：李菲菲
+
 学号：18307110500
+
+
 Github 地址： https://github.com/llffff/Web-Project1/
+
 静态网页地址： https://llffff.github.io/Web-Project1/
+
+
 项目完成情况：已完成grade.pdf上内容
+
 Bonus完成情况：已完成5.1，5.2，5.3
 
 -------------------
